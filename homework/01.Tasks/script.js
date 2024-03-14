@@ -1,3 +1,4 @@
+
 //2
 let firstName = 'Jeyran '
 let lastName = 'Zahidova '
@@ -58,4 +59,6 @@ let fullLowerName = 'jeyran zahidova'
 let jwithBig = fullLowerName.slice(0, 1).toUpperCase()+fullLowerName.slice(1)
 let zwithBig = jwithBig.slice(0, 7) + jwithBig.slice(7, 8).toUpperCase()+fullLowerName.slice(8)
 console.log(zwithBig);
+
+
 
