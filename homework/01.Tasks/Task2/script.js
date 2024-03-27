@@ -30,13 +30,16 @@ console.log(changes);
 let increase = arr.filter((item, index) => arr.indexOf(item) === index);
 console.log(increase);
 
-
-
 //7
 let arr = [4, 5, 2, 1, 5, 2, 5, 3, 5, 6, 2, 1, 6, 2, 6, 2, 5, 3, 2, 7, 4, 6, 4, 5, 6, 2, 5, 6, 3, 7, 3, 7];
 console.log(Math.max(4, 5, 2, 1, 5, 2, 5, 3, 5, 6, 2, 1, 6, 2, 6, 2, 5, 3, 2, 7, 4, 6, 4, 5, 6, 2, 5, 6, 3, 7, 3, 7));
 let arr3 = arr.filter(item => item == 7)
 console.log(arr2);
+
+//8
+const Name = 'jeyran'
+let nm1 = Name.length
+console.log(nm1);
 
 //9
 //let result = arr.filter(item => item %3 ==2)
@@ -59,7 +62,15 @@ console.log(arr2);
 
 
 
+//13
+let array2 = arr.filter(item => item > 2);
+let arr4 = arr.length - array2.length;
+console.log(array2);
+console.log(arr4);
 
+//14
+let index7 = arr.indexOf (7)
+console.log(index7);
 
 
 //task2
@@ -117,130 +128,6 @@ let arr2 = [
         key: 13  
     },
 ]
-
-
-
-//16
-console.log(startingWithT(arr2));
-function startingWithT(arr) {
-    let res= []
-    arr.map(item => {
-        if (item.name[0] === 't') {
-            res.push(item)
-        }
-    })
-    return res;
-}
-
-//17
-console.log(startingAndEndingWithT(arr2));
-function startingAndEndingWithT(arr) {
-    let res= []
-    arr.map(item => {
-        if (item.name[0] === 't' && item.name[item.name.length - 1] === 't') {
-            res.push(item)
-        }
-    })
-    return res;
-}
-
-//18
-console.log(keysDigit(arr2));
-function keysDigit(arr) {
-    let res = 0; 
-    arr.map(item => {
-        if (item.name[0] === 't' && item.name[item.name.length - 1] === 't') {
-            res += item.key;
-        }
-    })
-    return res;
-}
-
-//19
-console.log(changeNameToSuperDev(arr2));
-function changeNameToSuperDev(arr) {
-    arr.map(item => {
-        if (item.name[item.name.length - 1] === 'e') {
-            item.name = "SuperDev"
-        }
-    })
-}
-
-//20
-console.log(maxLengthNameKey(arr2));
-function maxLengthNameKey(arr) {
-    let max = arr[0];
-    for (let i = 0; i < arr.length; i++) {
-        if (max.name.length < arr[i].name.length) {
-            max = arr[i];
-        }
-    }
-    return max.key;
-}
-
-//21
-console.log(maxLengthNameIndex(arr2));
-function maxLengthNameIndex(arr) {
-    let max = arr[0];
-    let maxIndex= 0;
-    arr.forEach((element, index) => {
-        if (max.name.length < element.name.length) {
-            max = element;
-            maxIndex = index;
-        }
-        
-    });
-    return maxIndex;
-}
-
-//22
-console.log(new4LengthItemsArr(arr2));
-function new4LengthItemsArr(arr) {
-    let newArr = [];
-    arr.map(item => {
-        if (item.name.length === 4) {
-            newArr.push(item)
-        }
-    });
-    return newArr;
-}
-
-//23 
-console.log(maxKeyObjName(arr2));
-function maxKeyObjName(arr) {
-    let max = arr[0]
-    arr.map(item => {
-        if (item.key > max.key) {
-            max = item;
-        }
-    })
-    return max.name
-} 
-
-//24 
-console.log(find2LsNameİndexs(arr2));
-function find2LsNameİndexs(arr) {
-    let res = []
-    arr.map(item => {
-        if (item.name.split('').filter(s => s.toLowerCase() === "l").length === 2) {
-            res.push(item.key)
-        }
-    })
-    return res;
-}
-
-//25 
-console.log(find2LsNameİndexs(arr2));
-function find2LsNameİndexs(arr) {
-    let res = []
-    arr.map(item => {
-        if (item.name.split('').filter(s => s.toLowerCase() === "l").length === 2) {
-            res.push(item.key)
-        }
-    })
-    return res;
-}
-
 
 
 
