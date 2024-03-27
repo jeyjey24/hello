@@ -129,6 +129,23 @@ let arr2 = [
     },
 ]
 
+//16
+let names = arr2.filter(item => item.name.startsWith('t'));
+console.log(names);
+
+//17
+let nameT = arr2.filter(item => item.name.startsWith('t') && item.name.endsWith('t')).length;
+console.log(nameT);
+
+//19
+let arr1 = arr2.map((item, index) => {
+    if (item.name.slice(-1) === 'e') {
+        return { ...item, name: "SuperDev" };
+    } else {
+        return item;
+    }
+});
+console.log(arr)
 
 
 
